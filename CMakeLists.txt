@@ -34,8 +34,13 @@ set(CORE_SOURCES
     src/core/shutdown.cpp
 )
 
-# Source files - Storage (Phase 2 - stub files for now)
-set(STORAGE_SOURCES)
+# Source files - Storage (Phase 2)
+set(STORAGE_SOURCES
+    src/storage/wal.cpp
+    src/storage/page_manager.cpp
+    src/storage/segment.cpp
+    src/storage/recovery.cpp
+)
 
 # Source files - Memory (Phase 3 - stub files for now)
 set(MEMORY_SOURCES)
@@ -66,6 +71,7 @@ set(SECURITY_SOURCES)
 # All sources
 set(ALL_SOURCES
     ${CORE_SOURCES}
+    ${STORAGE_SOURCES}
     ${SERVER_SOURCES}
 )
 
