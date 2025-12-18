@@ -42,8 +42,12 @@ set(STORAGE_SOURCES
     src/storage/recovery.cpp
 )
 
-# Source files - Memory (Phase 3 - stub files for now)
-set(MEMORY_SOURCES)
+# Source files - Memory (Phase 3)
+set(MEMORY_SOURCES
+    src/memory/arena.cpp
+    src/memory/query_allocator.cpp
+    src/memory/memory_tracker.cpp
+)
 
 # Source files - SQL (Phase 4 - stub files for now)
 set(SQL_SOURCES)
@@ -72,6 +76,7 @@ set(SECURITY_SOURCES)
 set(ALL_SOURCES
     ${CORE_SOURCES}
     ${STORAGE_SOURCES}
+    ${MEMORY_SOURCES}
     ${SERVER_SOURCES}
 )
 
