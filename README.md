@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.png" alt="EdgeSQL Lite Logo" width="300">
+</p>
+
 # EdgeSQL Lite
 
 A deterministic, budget-enforced SQL server for edge systems.
