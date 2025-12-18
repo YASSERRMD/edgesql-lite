@@ -8,11 +8,11 @@
 #include <atomic>
 #include <cstdint>
 #include <functional>
-#include <memory>
 #include <string>
 #include <thread>
 
-namespace edgesql::server {
+namespace edgesql {
+namespace server {
 
 /**
  * @brief Connection information
@@ -98,4 +98,5 @@ private:
   std::thread accept_thread_;
 };
 
-} // namespace edgesql::server
+} // namespace server
+} // namespace edgesql

@@ -13,9 +13,11 @@
 #include <mutex>
 #include <queue>
 #include <thread>
+#include <type_traits>
 #include <vector>
 
-namespace edgesql::core {
+namespace edgesql {
+namespace core {
 
 /**
  * @brief Task for the thread pool
@@ -123,4 +125,5 @@ auto ThreadPool::submit_with_result(F &&f, Args &&...args)
   return result;
 }
 
-} // namespace edgesql::core
+} // namespace core
+} // namespace edgesql

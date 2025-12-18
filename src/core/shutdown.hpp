@@ -12,7 +12,8 @@
 #include <mutex>
 #include <vector>
 
-namespace edgesql::core {
+namespace edgesql {
+namespace core {
 
 /**
  * @brief Shutdown coordinator
@@ -134,4 +135,5 @@ private:
   static std::condition_variable wait_cv_;
 };
 
-} // namespace edgesql::core
+} // namespace core
+} // namespace edgesql

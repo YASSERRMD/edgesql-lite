@@ -4,11 +4,14 @@
  */
 
 #include "signal_handler.hpp"
+#include <cstring>
 #include <iostream>
 #include <mutex>
+#include <unistd.h>
 #include <vector>
 
-namespace edgesql::core {
+namespace edgesql {
+namespace core {
 
 // Global shutdown flag
 std::atomic<bool> g_shutdown_requested{false};
@@ -93,4 +96,5 @@ void SignalHandler::signal_handler(int signal) {
   g_shutdown_requested.store(true, std::memory_order_release);
 }
 
-} // namespace edgesql::core
+} // namespace core
+} // namespace edgesql

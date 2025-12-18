@@ -1,0 +1,7 @@
+/Users/mdyasser/edgesql-lite/build/CMakeFiles/edgesql-lite.dir
+/Users/mdyasser/edgesql-lite/build/CMakeFiles/edit_cache.dir
+/Users/mdyasser/edgesql-lite/build/CMakeFiles/rebuild_cache.dir
+/Users/mdyasser/edgesql-lite/build/CMakeFiles/list_install_components.dir
+/Users/mdyasser/edgesql-lite/build/CMakeFiles/install.dir
+/Users/mdyasser/edgesql-lite/build/CMakeFiles/install/local.dir
+/Users/mdyasser/edgesql-lite/build/CMakeFiles/install/strip.dir

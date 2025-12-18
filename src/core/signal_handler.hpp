@@ -9,7 +9,8 @@
 #include <csignal>
 #include <functional>
 
-namespace edgesql::core {
+namespace edgesql {
+namespace core {
 
 /**
  * @brief Global shutdown flag
@@ -57,4 +58,5 @@ private:
   static void signal_handler(int signal);
 };
 
-} // namespace edgesql::core
+} // namespace core
+} // namespace edgesql

@@ -34,78 +34,39 @@ set(CORE_SOURCES
     src/core/shutdown.cpp
 )
 
-# Source files - Storage
-set(STORAGE_SOURCES
-    src/storage/wal.cpp
-    src/storage/page_manager.cpp
-    src/storage/segment.cpp
-    src/storage/recovery.cpp
-)
+# Source files - Storage (Phase 2 - stub files for now)
+set(STORAGE_SOURCES)
 
-# Source files - Memory
-set(MEMORY_SOURCES
-    src/memory/arena.cpp
-    src/memory/query_allocator.cpp
-    src/memory/memory_tracker.cpp
-)
+# Source files - Memory (Phase 3 - stub files for now)
+set(MEMORY_SOURCES)
 
-# Source files - SQL
-set(SQL_SOURCES
-    src/sql/tokenizer.cpp
-    src/sql/parser.cpp
-)
+# Source files - SQL (Phase 4 - stub files for now)
+set(SQL_SOURCES)
 
-# Source files - Planner
-set(PLANNER_SOURCES
-    src/planner/table_scan.cpp
-    src/planner/order_by.cpp
-    src/planner/aggregate.cpp
-    src/planner/planner.cpp
-)
+# Source files - Planner (Phase 5 - stub files for now)
+set(PLANNER_SOURCES)
 
-# Source files - Executor
-set(EXECUTOR_SOURCES
-    src/executor/executor.cpp
-)
+# Source files - Executor (Phase 6 - stub files for now)
+set(EXECUTOR_SOURCES)
 
-# Source files - Concurrency
-set(CONCURRENCY_SOURCES
-    src/concurrency/transaction.cpp
-)
+# Source files - Concurrency (Phase 7 - stub files for now)
+set(CONCURRENCY_SOURCES)
 
-# Source files - Server
+# Source files - Server (Phase 1 - implemented)
 set(SERVER_SOURCES
     src/server/listener.cpp
-    src/server/http_server.cpp
-    src/server/query_handler.cpp
-    src/server/health_handler.cpp
 )
 
-# Source files - Observability
-set(OBSERVABILITY_SOURCES
-    src/observability/query_log.cpp
-    src/observability/metrics.cpp
-)
+# Source files - Observability (Phase 9 - stub files for now)
+set(OBSERVABILITY_SOURCES)
 
-# Source files - Security
-set(SECURITY_SOURCES
-    src/security/auth.cpp
-    src/security/roles.cpp
-    src/security/sandbox.cpp
-)
+# Source files - Security (Phase 10 - stub files for now)
+set(SECURITY_SOURCES)
 
 # All sources
 set(ALL_SOURCES
     ${CORE_SOURCES}
-    ${STORAGE_SOURCES}
-    ${MEMORY_SOURCES}
-    ${SQL_SOURCES}
-    ${PLANNER_SOURCES}
-    ${EXECUTOR_SOURCES}
-    ${CONCURRENCY_SOURCES}
     ${SERVER_SOURCES}
-    ${OBSERVABILITY_SOURCES}
-    ${SECURITY_SOURCES}
 )
 
 # Main executable

@@ -4,10 +4,10 @@
  */
 
 #include "thread_pool.hpp"
-#include "signal_handler.hpp"
 #include <iostream>
 
-namespace edgesql::core {
+namespace edgesql {
+namespace core {
 
 ThreadPool::ThreadPool(size_t num_threads) {
   if (num_threads == 0) {
@@ -102,4 +102,5 @@ void ThreadPool::worker_loop() {
   }
 }
 
-} // namespace edgesql::core
+} // namespace core
+} // namespace edgesql

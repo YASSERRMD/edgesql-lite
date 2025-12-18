@@ -16,7 +16,8 @@
 #include <cstring>
 #include <iostream>
 
-namespace edgesql::server {
+namespace edgesql {
+namespace server {
 
 Listener::Listener(const std::string &address, uint16_t port,
                    ConnectionHandler handler)
@@ -184,4 +185,5 @@ void Listener::accept_loop() {
   }
 }
 
-} // namespace edgesql::server
+} // namespace server
+} // namespace edgesql

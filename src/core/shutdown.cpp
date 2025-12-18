@@ -7,7 +7,8 @@
 #include "signal_handler.hpp"
 #include <iostream>
 
-namespace edgesql::core {
+namespace edgesql {
+namespace core {
 
 // Static members for ActiveOperationGuard
 std::atomic<size_t> ActiveOperationGuard::active_count_{0};
@@ -168,4 +169,5 @@ bool ActiveOperationGuard::wait_all_complete(std::chrono::seconds timeout) {
   });
 }
 
-} // namespace edgesql::core
+} // namespace core
+} // namespace edgesql
