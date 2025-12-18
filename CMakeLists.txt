@@ -49,8 +49,12 @@ set(MEMORY_SOURCES
     src/memory/memory_tracker.cpp
 )
 
-# Source files - SQL (Phase 4 - stub files for now)
-set(SQL_SOURCES)
+# Source files - SQL (Phase 4)
+set(SQL_SOURCES
+    src/sql/tokenizer.cpp
+    src/sql/ast.cpp
+    src/sql/parser.cpp
+)
 
 # Source files - Planner (Phase 5 - stub files for now)
 set(PLANNER_SOURCES)
@@ -77,6 +81,7 @@ set(ALL_SOURCES
     ${CORE_SOURCES}
     ${STORAGE_SOURCES}
     ${MEMORY_SOURCES}
+    ${SQL_SOURCES}
     ${SERVER_SOURCES}
 )
 
