@@ -56,8 +56,12 @@ set(SQL_SOURCES
     src/sql/parser.cpp
 )
 
-# Source files - Planner (Phase 5 - stub files for now)
-set(PLANNER_SOURCES)
+# Source files - Planner (Phase 5)
+set(PLANNER_SOURCES
+    src/planner/plan.cpp
+    src/planner/catalog.cpp
+    src/planner/planner.cpp
+)
 
 # Source files - Executor (Phase 6 - stub files for now)
 set(EXECUTOR_SOURCES)
@@ -82,6 +86,7 @@ set(ALL_SOURCES
     ${STORAGE_SOURCES}
     ${MEMORY_SOURCES}
     ${SQL_SOURCES}
+    ${PLANNER_SOURCES}
     ${SERVER_SOURCES}
 )
 
