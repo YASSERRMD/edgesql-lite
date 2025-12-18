@@ -63,22 +63,34 @@ set(PLANNER_SOURCES
     src/planner/planner.cpp
 )
 
-# Source files - Executor (Phase 6 - stub files for now)
-set(EXECUTOR_SOURCES)
-
-# Source files - Concurrency (Phase 7 - stub files for now)
-set(CONCURRENCY_SOURCES)
-
-# Source files - Server (Phase 1 - implemented)
-set(SERVER_SOURCES
-    src/server/listener.cpp
+# Source files - Executor (Phase 6)
+set(EXECUTOR_SOURCES
+    src/executor/context.cpp
+    src/executor/executor.cpp
 )
 
-# Source files - Observability (Phase 9 - stub files for now)
-set(OBSERVABILITY_SOURCES)
+# Source files - Concurrency (Phase 7)
+set(CONCURRENCY_SOURCES
+    src/concurrency/rw_lock.cpp
+    src/concurrency/transaction.cpp
+)
 
-# Source files - Security (Phase 10 - stub files for now)
-set(SECURITY_SOURCES)
+# Source files - Server (Phase 1, 8)
+set(SERVER_SOURCES
+    src/server/listener.cpp
+    src/server/http_server.cpp
+    src/server/query_handler.cpp
+)
+
+# Source files - Observability (Phase 9)
+set(OBSERVABILITY_SOURCES
+    src/observability/metrics.cpp
+)
+
+# Source files - Security (Phase 10)
+set(SECURITY_SOURCES
+    src/security/auth.cpp
+)
 
 # All sources
 set(ALL_SOURCES
@@ -87,7 +99,11 @@ set(ALL_SOURCES
     ${MEMORY_SOURCES}
     ${SQL_SOURCES}
     ${PLANNER_SOURCES}
+    ${EXECUTOR_SOURCES}
+    ${CONCURRENCY_SOURCES}
     ${SERVER_SOURCES}
+    ${OBSERVABILITY_SOURCES}
+    ${SECURITY_SOURCES}
 )
 
 # Main executable
